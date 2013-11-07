@@ -2,7 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/elfassy/simple_dragonfly_preview.png)](https://codeclimate.com/github/elfassy/simple_dragonfly_preview)
 
-Easily add an image with preview to your forms. This will make your forms submit faster and allow the user to get feedback on how the image will look like.
+Easily add an image with preview to your forms. This will make your forms submit faster and allow the user to get feedback on how the image will look like. Oh, and you can skip the `multipart` attribute in your forms!
 
 ## Installation
 
@@ -11,7 +11,7 @@ Add this line to your application's Gemfile:
 gem 'simple_form'
 gem 'dragonfly'
 
-gem 'dragonfly_image_preview'
+gem 'simple_dragonfly_preview'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 ## Usage
 
 ```ruby
-  f.input :avatar, as: image_preview, size: "145x145#"
+f.input :avatar, as: image_preview, size: "145x145#"
 ```
 
 ## Contributing
