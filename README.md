@@ -1,4 +1,4 @@
-# DragonflyImagePreview
+# Dragonfly Image Preview
 
 Easily add an image with preview to your forms. This will make your forms submit faster and allow the user to get feedback on how the image will look like.
 
@@ -6,10 +6,10 @@ Easily add an image with preview to your forms. This will make your forms submit
 
 Add this line to your application's Gemfile:
 ```ruby
-  gem 'simple_form'
-  gem 'dragonfly'
+gem 'simple_form'
+gem 'dragonfly'
 
-  gem 'dragonfly_image_preview'
+gem 'dragonfly_image_preview'
 ```
 
 And then execute:
