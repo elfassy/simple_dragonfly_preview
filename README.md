@@ -1,5 +1,7 @@
 # Dragonfly Image Preview
 
+[![Code Climate](https://codeclimate.com/github/elfassy/simple_dragonfly_preview.png)](https://codeclimate.com/github/elfassy/simple_dragonfly_preview)
+
 Easily add an image with preview to your forms. This will make your forms submit faster and allow the user to get feedback on how the image will look like.
 
 ## Installation
