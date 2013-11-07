@@ -22,7 +22,7 @@ And then execute:
 ## Usage
 
 ```ruby
-f.input :avatar, as: image_preview, size: "145x145#"
+f.input :avatar, as: :image_preview, size: "145x145#"
 ```
 
 ## Contributing
