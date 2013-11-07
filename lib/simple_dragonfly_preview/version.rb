@@ -1,0 +1,3 @@
+module SimpleDragonflyPreview
+  VERSION = "0.0.1"
+end
