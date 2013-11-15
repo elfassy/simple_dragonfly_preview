@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = "SimpleForm Dragonfly Image Preview"
   s.description = "Adds an image preview to your forms"
+  s.license = 'MIT'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
