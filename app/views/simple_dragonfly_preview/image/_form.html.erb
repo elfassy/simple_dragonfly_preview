@@ -12,7 +12,7 @@
       <% end %>
     </td>
     <td>
-      <%= content_tag(:iframe, nil, src: simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id), width:"400", height:"50", frameborder:"0") %>
+      <%= content_tag(:iframe, nil, src: main_app.simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id), width:"400", height:"50", frameborder:"0") %>
     </td>
   </tr>
 </table>
