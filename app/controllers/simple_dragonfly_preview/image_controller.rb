@@ -6,7 +6,7 @@ class SimpleDragonflyPreview::ImageController < ApplicationController
       app = Dragonfly.app
       uid = app.store(params[:image].tempfile)
       @image = app.fetch(uid)
-      @retained_image = Dragonfly::Serializer.json_encode(uid: @image.uid) if @image 
+      @retained_image = Dragonfly::Serializer.json_b64_encode(uid: @image.uid) if @image 
     end
     render :iframe
   end
