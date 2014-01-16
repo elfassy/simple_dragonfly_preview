@@ -15,10 +15,13 @@
         // window.parent.document.getElementById("<%= params[:image_id] %>").src = "<%= image_path('loader.png')%>";
         document.getElementById("image_preview_form").submit();
       };
-      
-      <% if @image %>
+      <% if @retained_image %>
         //update the retained image field
+        <p>Retained Image</p>
         window.parent.document.getElementById("<%= params[:retained_id] %>").value = "<%= @retained_image %>";
+      <%end%>
+      <% if @image %>
+      <p>Current Image</p>
         window.parent.document.getElementById("<%= params[:image_id] %>").src = "<%= @image.thumb('145x145#').url %>";
       <% end %>
     </script>
