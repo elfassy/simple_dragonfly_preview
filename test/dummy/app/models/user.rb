@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  image_accessor :avatar
+  dragonfly_accessor :avatar
 
   validates :email, :name, presence: true
 end
