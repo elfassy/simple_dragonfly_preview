@@ -6,6 +6,7 @@
     <%= form_tag simple_dragonfly_preview_upload_path, multipart: true, id: "image_preview_form" do %>
       <%= hidden_field_tag :retained_id, params[:retained_id] %>
       <%= hidden_field_tag :image_id, params[:image_id] %>
+      <%= hidden_field_tag :resize, params[:resize] %>
       <%= file_field_tag :image %>
     <% end %>
      
@@ -19,7 +20,7 @@
       <% if @image %>
         //update the retained image field
         window.parent.document.getElementById("<%= params[:retained_id] %>").value = "<%= @retained_image %>";
-        window.parent.document.getElementById("<%= params[:image_id] %>").src = "<%= @image.thumb('145x145#').url %>";
+        window.parent.document.getElementById("<%= params[:image_id] %>").src = "<%= @image.thumb(@resize).url %>";
       <% end %>
     </script>
   </body>

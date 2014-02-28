@@ -1,7 +1,7 @@
 
 class ImagePreviewInput < SimpleForm::Inputs::Base
   def input
-    resize = options.delete(:size) || '100x80#'
+    resize = options.delete(:size) || '350x100>'
     size = resize.sub(/\D$/,'')
     
     template.render("simple_dragonfly_preview/image/form", 

@@ -2,17 +2,19 @@
   <tr>
     <td>
       <% if f.object.send("#{attribute_name}_uid") %>
-        <%= image_tag f.object.send(attribute_name).thumb(resize).url, size: size, id: image_id %>
+        <%= image_tag f.object.send(attribute_name).thumb(resize).url, id: image_id %>
         <div>
           <%= f.label("remove_#{attribute_name}", "Remove?") %>
           <%= f.check_box("remove_#{attribute_name}") %>
         </div>
       <% else %>
-        <%= image_tag "simple_dragonfly_preview/default.png", size: size, id: image_id %>
+        <%= image_tag "simple_dragonfly_preview/default.png", id: image_id %>
       <% end %>
     </td>
+  </tr>
+  <tr>
     <td>
-      <%= content_tag(:iframe, nil, src: main_app.simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id), width:"400", height:"50", frameborder:"0") %>
+      <%= content_tag(:iframe, nil, src: main_app.simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id, resize: resize), width:"400", height:"50", frameborder:"0") %>
     </td>
   </tr>
 </table>
