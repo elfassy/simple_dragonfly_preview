@@ -14,6 +14,10 @@
   <strong>Avatar uid:</strong>
   <%= @user.avatar_uid %>
 </p>
+<p>
+  <strong>Avatar file name:</strong>
+  <%= @user.avatar_name %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
