@@ -32,3 +32,9 @@ f.input :avatar, as: :image_preview, size: "145x145#"
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+#### Todo
+* add spinner to show upload progress
+* remove image link on top of image
+* improve readme to show how to customize view and default image
+
