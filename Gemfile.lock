@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simple_dragonfly_preview (0.0.4)
+    simple_dragonfly_preview (0.0.5)
       dragonfly (~> 1.0.0)
       rails (~> 4.0)
 
