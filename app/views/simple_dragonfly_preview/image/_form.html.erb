@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td>
-      <%= content_tag(:iframe, nil, src: main_app.simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id, resize: resize), width:"400", height:"50", frameborder:"0") %>
+      <%= content_tag(:iframe, nil, src: main_app.simple_dragonfly_preview_iframe_path(retained_id: retained_id, image_id: image_id, resize: resize, attribute_keys: attribute_keys), width:"400", height:"50", frameborder:"0") %>
     </td>
   </tr>
 </table>
