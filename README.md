@@ -25,6 +25,12 @@ And then execute:
 f.input :avatar, as: :image_preview, size: "145x145#"
 ```
 
+### Strong Parameters
+You'll also need to update your form's controller. For example, assuming a `User` model with an `avatar_uid` field, you'd need:
+```ruby
+User.new(params.require!(:users).permit(:retained_avatar, :remove_avatar, ... ))
+```
+
 ## Contributing
 
 1. Fork it
