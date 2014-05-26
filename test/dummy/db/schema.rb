@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20131106190012) do
     t.string   "email"
     t.string   "avatar_uid"
     t.string   "avatar_name"
+    t.string   "image_uid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

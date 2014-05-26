@@ -10,14 +10,23 @@
   <%= @user.email %>
 </p>
 
+<% if @user.avatar_uid %>
 <p>
-  <strong>Avatar uid:</strong>
-  <%= @user.avatar_uid %>
+  <strong>Avatar:</strong>
+  <%= image_tag @user.avatar.thumb("200x200>").url %>
 </p>
 <p>
   <strong>Avatar file name:</strong>
   <%= @user.avatar_name %>
 </p>
+<% end %>
+
+<% if @user.image_uid %>
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @user.image.thumb("200x200>").url %>
+</p>
+<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
