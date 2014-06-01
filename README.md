@@ -31,6 +31,14 @@ You'll also need to update your form's controller. For example, assuming a `User
 User.new(params.require!(:users).permit(:retained_avatar, :remove_avatar, ... ))
 ```
 
+### Default Image
+You can change the default image by running a configuration block (in rails, you would place this in a file inside the config/initializers directory:
+```ruby
+SimpleDragonflyPreview.configure do |config|
+  config.default_image_url = "lorem.png"
+end
+```
+
 ## Contributing
 
 1. Fork it
