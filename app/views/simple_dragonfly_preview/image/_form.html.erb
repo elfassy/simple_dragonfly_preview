@@ -8,7 +8,7 @@
           <%= f.check_box("remove_#{attribute_name}") %>
         </div>
       <% else %>
-        <%= image_tag "simple_dragonfly_preview/default.png", id: image_id %>
+        <%= image_tag(SimpleDragonflyPreview.configuration.default_image_url, id: image_id) %>
       <% end %>
     </td>
   </tr>
