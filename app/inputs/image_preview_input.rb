@@ -1,6 +1,6 @@
 
 class ImagePreviewInput < SimpleForm::Inputs::Base
-  def input
+  def input(wrapper_options = nil)
     resize = options.delete(:size) || '350x100>'
     size = resize.sub(/\D$/,'')
     keys = options.delete(:attribute_keys)
