@@ -13,5 +13,5 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'simple_form'
 gem 'rack-cache', :require => 'rack/cache'
+gem 'pry'

@@ -1,3 +1,4 @@
+
 begin
   require 'bundler/setup'
 rescue LoadError
@@ -5,7 +6,6 @@ rescue LoadError
 end
 
 require 'rdoc/task'
-
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'SimpleDragonflyPreview'
@@ -14,13 +14,11 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-
-
 Bundler::GemHelper.install_tasks
+APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
+load 'rails/tasks/engine.rake'
 
 require 'rake/testtask'
-
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'

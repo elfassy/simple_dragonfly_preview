@@ -3,6 +3,13 @@ ENV["RAILS_ENV"] = "test"
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
+require "minitest/rails/capybara"
+
+require "minitest/reporters"
+Minitest::Reporters.use!
+
+require 'capybara/poltergeist'
+Capybara.default_driver = :poltergeist
 
 Rails.backtrace_cleaner.remove_silencers!
 

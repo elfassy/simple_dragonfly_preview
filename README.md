@@ -1,6 +1,7 @@
 # Dragonfly Image Preview
 
 [![Code Climate](https://codeclimate.com/github/elfassy/simple_dragonfly_preview.png)](https://codeclimate.com/github/elfassy/simple_dragonfly_preview)
+[![Build Status](https://travis-ci.org/elfassy/simple_dragonfly_preview.svg?branch=master)](https://travis-ci.org/elfassy/simple_dragonfly_preview)
 
 Easily add an image with preview to your forms. This will make your forms submit faster and allow the user to get feedback on how the image will look like. Oh, and you can skip the `multipart` attribute in your forms!
 

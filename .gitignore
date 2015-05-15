@@ -8,3 +8,7 @@ test/dummy/tmp/
 test/dummy/.sass-cache
 test/dummy/public/system/dragonfly/*
 Gemfile.lock
+
+test/dummy/dragonfly.log
+
+dragonfly.log
