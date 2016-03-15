@@ -5,6 +5,7 @@ before_script:
 rvm:
   - 1.9.3
   - 2.1.3
+  - 2.2.4
 script: bundle exec rake test
 env:
   - RACK_ENV=test
